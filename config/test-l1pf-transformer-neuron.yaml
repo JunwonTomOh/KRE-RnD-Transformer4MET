@@ -31,7 +31,7 @@ model:
         activation: ReLU
         widening_factor: 2
         dropout_p: 0.0
-        num_layers: 2
+        num_layers: 4
     criterion:
       class_path: torch.nn.MSELoss
 data:
@@ -44,3 +44,5 @@ data:
     - /scratch/x2719a04/data/L1METML/perfNano_TTbar_PU200.110X_set4.root
   test_files:
     - /scratch/x2719a04/data/L1METML/perfNano_TTbar_PU200.110X_set5.root
+trainer:
+  max_epochs: 100
