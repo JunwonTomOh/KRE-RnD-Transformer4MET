@@ -26,7 +26,7 @@ model:
     model:
       class_path: diffmet.models.Transformer
       init_args:
-        embed_dim: 64
+        embed_dim: 32
         num_heads: 4
         activation: ReLU
         widening_factor: 4
